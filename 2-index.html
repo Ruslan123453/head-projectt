@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2-style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+        <div class="search-container">
+            <div class="meetup-logo">
+              <a href="/index.html">
+                <img src="./assets/logo.png" alt="logo">
+                </a>
+            </div>
+           <div class="search-wrapper">
+                <div class="search-left" >
+                    <input type="text" class="search-input" placeholder="Search events">
+
+                    <img src="./assets/search-grey.png" alt="Search" class="search-event">
+                </div>
+                <div class="search-right">
+                    <p>Mountain View, CA</p>
+
+                    <button class="search-button"><img src="./assets/search-white.png" alt="Search"></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-controls">
+            <div class="language-switch">
+                <img src="./assets/planet.png" alt="planet">
+                <p>English</p>
+            </div>
+            <div class="login-button">
+                <button>Log in</button>
+            </div>
+            <div class="signup-button">
+                <button>Sign up</button>
+            </div>
+        </div> 
+    </div>
+
+<div class="mein-filter">
+    <div class="filter-display">
+      <div class="filter-list">
+    <h1>Events near New York, NY</h1>
+      <div class="tab-bar">
+        <button class="active-tab">Events</button>
+        </div>
+        <div class="filter-button">
+          <select id="typeFilter">
+            <option value="">Any type</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+          <select id="distanceFilter">
+            <option value="">Any distance</option>
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+            <option value="15">15 km</option>
+            <option value="25">25 km</option>
+            <option value="50">50 km</option>
+            <option value="75">75 km</option>
+            <option value="100">100 km</option>
+          </select>
+          <select id="dateFilter">
+            <option value="">Any day</option>
+            <option value="Mar 13 11:00 PM">Mar 13, 11:00 PM</option>
+            <option value="Mar 14 11:00 PM">Mar 14, 11:00 PM</option>
+            <option value="Mar 23 3:00 PM">Mar 23, 3:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-container-images" id="eventsContainer">
+        <!-- КАРТОЧКИ СОБЫТИЙ -->
+        <div class="event-card" data-type="Offline" data-distance="5" data-date="Mar 13 11:30 PM">
+          <img src="/assets/filter-images/1-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Wed, Mar 13 · 11:30 PM UTC</p>
+            <h1>All Nations - Manhattan Missions Church Bible Study</h1>
+            <p class="category">Hobbies and Passions (5 km)</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="Offline" data-distance="25" data-date="Mar 23 3:00 PM">
+          <img src="/assets/filter-images/2-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Sat, Mar 23 · 3:00 PM UTC</p>
+            <h1>INFJ Personality Type - Coffee Shop Meet & Greet</h1>
+            <p class="category">Hobbies and Passions (25 km)</p>
+            <div class="attendees"><p>99 attendees</p></div>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="Offline" data-distance="50" data-date="Mar 13 11:30 PM">
+          <img src="/assets/filter-images/3-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Wed, Mar 13 · 11:30 PM UTC</p>
+            <h1>NYC AI Users - AI Tech Talks</h1>
+            <p class="category">Technology (50 km)</p>
+            <div class="attendees"><p>43 attendees</p><button>2 spots left</button></div>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="Online" data-distance="" data-date="Mar 13 11:30 PM">
+          <img src="/assets/filter-images/4-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Wed, Mar 13 · 11:30 PM UTC</p>
+            <h1>Book 40+ Appointments Per Month Using AI</h1>
+            <p class="category">Technology</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="Online" data-distance="" data-date="Mar 13 11:00 PM">
+          <img src="/assets/filter-images/5-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Wed, Mar 13 · 11:00 PM UTC</p>
+            <h1>Dump writing group weekly meetup</h1>
+            <p class="category">Hobbies and Passions</p>
+            <div class="attendees"><p>77 attendees</p></div>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="Online" data-distance="" data-date="Mar 14 11:00 PM">
+          <img src="/assets/filter-images/6-img.png" alt="">
+          <div class="context-container">
+            <p class="data">Thu, Mar 14 · 11:00 PM UTC</p>
+            <h1>Senior Singles Chat, Meet & Dating</h1>
+            <p class="category">Hobbies and Passions</p>
+            <div class="attendees"><p>140 attendees</p></div>
+          </div>
+        </div>
+      </div>
+
+       <div class="map-section">
+      <p>Find events near</p>
+      <h1>New York, NY</h1>
+      <div class="map-wrapper">
+        <img src="/assets/filter-images/map-img.png" alt="Map">
+        <button class="map-button">
+          Browse in map
+          <img class="expand-button" src="/assets/filter-images/expandMapIcon.svg.png" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="start-footer">
+      <h1>Create your own Meetup group.</h1>
+      <button>Get Started</button>
+    </div>
+    <div class="mein-footer">
+
+      <div class="mein-1-section">
+        <h1>Your Account</h1>
+        <button>Sign up</button>
+        <button>Log in</button>
+        <button>Help</button>
+        <button>Become an Affiliate</button>
+      </div>
+
+      <div class="mein-2-section">
+        <h1>Discover</h1>
+        <button>Groups</button>
+        <button>Calendar</button>
+        <button>Topics</button>
+        <button>Cities</button>
+        <button>Online Events</button>
+        <button>Local Guides</button>
+        <button>Make Friends</button>
+      </div>
+
+      <div class="mein-3-section">
+        <h1>Meetup</h1>
+        <button>About</button>
+        <button>Blog</button>
+        <button>Meetup Pro</button>
+        <button>Careers</button>
+        <button>Apps</button>
+        <button>Podcast</button>
+      </div>
+    </div>
+    <div class="download-section">
+      <div class="left-social-media">
+      <h1>Follow us</h1>
+      <img src="/assets/footer-img/Link - Meetup on Facebook → SVG.png" alt="">
+      <img src="/assets/footer-img/Link - Meetup on Twitter → SVG.png" alt="">
+      <img src="/assets/footer-img/Link - Meetup on YouTube → SVG.png" alt="">
+      <img src="/assets/footer-img/Link - Instagram → SVG.png" alt="">
+      <img src="/assets/footer-img/Link - TikTok → SVG.png" alt="">
+      </div>
+      <div class="right-download">
+        <img src="/assets/footer-img/download_en-US.svg fill.png" alt="">
+        <img src="/assets/footer-img/download_en-US.svg.png" alt="">
+      </div>
+    </div>
+    <div class="legal-links">
+      <p>© 2024 Meetup</p>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Do Not Sell or Share My Personal Data</p>
+      <p>Cookie Policy</p>
+      <p>Help</p>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

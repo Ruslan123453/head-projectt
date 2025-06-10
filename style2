@@ -1,0 +1,56 @@
+.header-controls {
+ display: flex;
+ /* justify-content: flex-end; */
+ width: 241.13px;
+ height: 64px
+ padding: /* твой отступ */;
+  gap: /* расстояние между кнопками */;
+  align-items: center;
+border: 2px solid blue;
+/* position: absolute; */
+right: 50px;
+
+    justify-content: space-around;
+}
+
+.language-switch {
+display: flex;
+  align-items: center;
+  gap: 22.03px;
+  position: absolute;
+  width: 72.97px;
+  height: 20px;
+  top: 22px;
+  border: 1px solid brown;
+  cursor: pointer;
+  
+}
+.language-switch img{
+  width: 20px;
+  height: 20px;
+
+}
+
+.language-switch p {
+     position: absolute;
+    left: 24px;
+    font-size: 14px;
+}
+
+.login-button button {
+position: absolute;
+border: none;
+width: 41.17px;
+height: 20px;
+top: 20px;
+left: 158px;
+}
+.signup-button button {
+position: absolute;
+height: 36px;
+top: 14px;
+border: none;
+border-radius:8px;
+background-color:#00798A ;
+gap: 21.83px;
+}
